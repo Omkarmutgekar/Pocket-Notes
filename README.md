@@ -1,0 +1,1 @@
+This is a web application designed for the purpose of storing individual groups of notes and organizing notes within specific groups.
