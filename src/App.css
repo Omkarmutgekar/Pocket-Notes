@@ -1,0 +1,430 @@
+.main{
+  display:flex;
+  align-items : center;
+  justify-content:center;
+  background-color:#DAE5F5;
+  height:100vh;
+
+
+  .home{
+    flex:3;
+    
+    .img-area{
+      display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:10rem 0 -2rem 0;
+    }
+
+    .home-logo{
+      display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-weight:bold;
+    
+    }
+
+    .home-info{
+      display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:-2rem;
+
+    .info-txt{
+      width:30rem;
+      margin:0;
+    }
+    }
+
+    .footer{
+      display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    margin-top:10rem;
+
+    .foot-icon{
+      width:12px;
+      height:15px;
+    }
+    }
+
+  }
+
+  .container{
+    display : flex;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+
+  .sidebar{
+    flex:1;
+    background-color:white;
+  }
+  .messagebox{
+    flex:3;
+  }
+}
+
+.sidebar{
+  /* overflow:scroll; */
+  position:relative;
+  height:100%;
+
+  .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color:white;
+    padding-bottom:2rem;
+
+    .logo{
+      font-size:35px;
+      font-weight:500px;
+      padding-top:40px;
+    }
+   
+  }
+  
+ 
+
+  /* add group buttton */
+    .addgroup-btn{
+      position: sticky;
+      bottom: 2rem;
+      max-width:270px;
+      margin-left:17rem;
+
+      
+      
+    .round{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      background-color:#00008B;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+    }
+    .plus{
+      font-size:50px;
+      /* font-weight:bold; */
+    }
+  }
+
+
+    .group-list{
+      height:100%;
+      overflow:scroll;
+    }
+
+  .group{
+    list-style-type:none;
+    padding-left:0;
+    
+    
+    .grp-item{
+      display: flex;
+      align-items:center;
+      justify-content:start;
+      gap:3rem;
+      cursor:pointer;
+      padding-left:3rem;
+      height:5rem;
+      border-radius:16px;
+      
+      grp-item-highlight{
+        background-color:lightgray;
+      }
+  
+      &:hover{
+        background-color:lightgray;
+        transistion:ease 0.2s;
+      }
+    }
+  
+    .grp-logo{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      /* background-color:blue; */
+      color:white;
+      text-align:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .grp-name{
+      font-size:20px;
+      font-weight:bold;
+    }
+}
+  
+
+ }
+
+
+ .noteBox{
+  flex:3;
+  display:inline;
+  
+  
+ .msg-header{
+  height:80px;
+  display:flex;
+  align-items:center;
+  background-color:#00008B;
+  color:white;
+
+  .msg-group{
+    list-style-type:none;
+    padding-left:0;
+    
+    .msg-grp-item{
+      display: flex;
+      align-items:center;
+      justify-content:start;
+      gap:3rem;
+      cursor:pointer;
+      padding-left:3rem;
+      height:5rem;
+      border-radius:16px;
+    }
+  
+    .msg-grp-logo{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      background-color:blue;
+      color:white;
+      text-align:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+  }
+ }
+
+ .input-area{
+  flex:2;
+  height:12rem;
+  background-color:#00008B;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  }  
+  .input-box{
+    height:10rem;
+    width:68rem;
+    border-radius:9px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    positin:relative;
+    overflow:hidden;
+  }
+
+}
+
+/* input button */
+.msg-input{
+  width:100%;
+  height:100%;
+  border-radius:9px;
+  text-align:left;
+  padding-bottom:6rem;
+  padding-left :3rem;
+  font-size:25px;
+}
+.send{
+  position:absolute;
+  margin-top:6rem;
+  margin-left:68%;
+  cursor:pointer;
+}
+
+
+ .messages{
+  padding:10px;
+  height:65%;
+  overflow:scroll;
+
+  .message{
+    background-color:white;
+    /* text-align:center; */
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom:1rem;
+    padding:1rem;
+    height:10rem;
+
+
+    .msgcontent{
+      font-size:16px;
+      padding:1rem;
+    }
+    .time-stamp{
+      display:flex;
+      align-items:center;
+      justify-content:end;
+      padding:1.5rem 1rem 0 0;
+      font-size:16px;
+      gap:1rem;
+
+      
+    }
+   
+  }
+  
+
+}
+
+
+
+/* create new group  */
+
+.group-tab{
+  /* position:absolute; */
+  /* background-color:black; */
+  /* background: #2F2F2FBF;
+  width:100%;
+  height: 100%; */
+  display:flex;
+  align-items:center;
+  justify-content:center; 
+}
+
+.popupGroup{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #2F2F2FBF;
+
+}
+
+.newGroup{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:600px;
+  height:220px;
+  border-radius:5px;
+  background-color:white;
+  /* display:none; */
+  
+  .grp-head{
+    display:flex;
+
+    .close-btn{
+      cursor:pointer;
+      margin-left:24rem;
+    }
+  }
+  
+  .group-input{
+    display:flex;
+    gap:2rem;
+
+    .grp-input{
+      width:400px;
+      height:40px;
+      border:2px gray solid;
+      border-radius:22px;
+      padding:4px;
+    }
+
+  }
+
+  .color{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+
+    .color-opt{
+      display:flex;
+      gap:8px;
+    }
+
+    /* .color-1{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#B38BFA;
+      cursor:pointer;
+    }
+
+    .color-2{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#FF79F2;
+      cursor:pointer;
+    }
+
+    .color-3{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#43E6FC;
+      cursor:pointer;
+    }
+
+    .color-4{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#F19576;
+      cursor:pointer;
+    }
+
+    .color-5{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#0047FF;
+      cursor:pointer;
+    }
+
+    .color-6{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      background-color:#6691FF;
+      cursor:pointer;
+    } */
+  }
+
+  .create-grp-btn{
+    width: 100px;
+    height: 28px;
+    border-radius: 11px;
+    margin-left:28rem;
+    background-color:#001F8B;
+    color:white;
+    cursor:pointer;
+  }
+}
+.highlight{
+  border: 2px solid black;
+  border-radius: 6vh;
+}
+
+
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: black;
+
+}
